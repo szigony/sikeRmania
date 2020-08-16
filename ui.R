@@ -14,7 +14,13 @@ body <- dashboardBody(
     tags$link(rel = "stylesheet", type = "text/css", href = "style.css")
   ),
   
-  tags$h1("Sikermánia")
+  fluidRow(
+    column(10, offset = 1,
+      plotlyOutput("all_time_users", height = "100%")
+    )
+  ),
+  
+  useShinyjs()
 )
 
 ### Dashboard
