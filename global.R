@@ -16,8 +16,8 @@ space <- function(x, ...) {
 }
 
 ### Connect to Google Developers
-# options(googleAuthR.client_id = "348597607864-3akr4gna5e558bben7cni8o5mvfplqa5.apps.googleusercontent.com")
-# options(googleAuthR.client_secret = "fqqh9Ahkt37adafXdaoSWO2P")
+# options(googleAuthR.client_id = key_get("CLIENT_ID", keyring = "sikermania"))
+# options(googleAuthR.client_secret = key_get("CLIENT_SECRET", keyring = "sikermania"))
 # options(googleAuthR.scopes.selected = "https://www.googleapis.com/auth/analytics.readonly")
 # ga_auth(email = "szigeti.patrik@gmail.com")
 
